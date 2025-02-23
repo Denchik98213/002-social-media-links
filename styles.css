@@ -1,0 +1,110 @@
+/* variables */
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+/* reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  background: var(--Grey-900);
+  color: var(--White);
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  width: 5.5rem;
+  border-radius: 999px;
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* text styles */
+
+h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.user-locathion {
+  font-weight: 700;
+  color: var(--Green);
+  margin-bottom: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--White);
+  background: var(--Grey-700);
+  padding: 0.75rem;
+  display: block;
+  width: 19rem;
+  text-align: center;
+  /* margin-bottom: 1rem; */
+  border-radius: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--Green);
+  color: var(--Grey-700);
+  cursor: pointer;
+  transition: background 0.5s ease;
+}
+
+.links * + * {
+  margin-top: 1rem;
+}
+
+/* layout styles */
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  min-height: 100dvh;
+}
+
+.profile-containier {
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  padding: 2.5rem;
+  background: var(--Grey-800);
+  border-radius: 0.75rem;
+}
+
+/* footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
